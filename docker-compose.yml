@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  dbt:
+    build: .
+    container_name: dbt_duckdb
+    volumes:
+      - .:/dbt_project
+    working_dir: /dbt_project
+    entrypoint: /bin/bash
