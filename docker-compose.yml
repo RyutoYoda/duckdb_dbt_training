@@ -7,3 +7,4 @@ services:
       - ~/.dbt:/root/.dbt
     working_dir: /dbt_project
     tty: true
+
